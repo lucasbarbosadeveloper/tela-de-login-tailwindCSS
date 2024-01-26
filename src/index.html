@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/output.css">
     <title>Tela de login em TailwindCSS</title>
 </head>
 <body>
-    
+    <div class="grid md:grid-cols-2">
+
+        <section class="flex flex-col items-center justify-center w-full h-screen p-5 md:bg-inputColor">
+
+            <img class="w-32 mb-5" src="../img/user.png" alt="icone de usuario">
+
+            <h1 class="font-bold text-5xl">Login</h1>
+
+            <form class="mt-10 flex flex-col w-full sm:max-w-96">
+
+                <input class="bg-inputColor md:bg-white p-3 rounded-md mb-4 placeholder:text-black" type="email" name="email" id="email" placeholder="Digite seu email...">
+
+                <input class="bg-inputColor md:bg-white p-3 rounded-md mb-4 placeholder:text-black" type="password" name="password" id="password" placeholder="************">
+
+                <div class="flex justify-between items-center mb-4">
+
+                    <div class="flex justify-center items-center gap-1">
+
+                        <input type="checkbox" name="check" id="check">
+
+                        <label class="text-sm font-semibold" for="check">Lembrar senha</label>
+
+                    </div>
+
+                    <div>
+                        <a class="text-sm font-semibold text-blue-500 hover:underline hover:text-blue-300" href="#">Esqueceu sua senha?</a>
+                    </div>
+
+                </div>
+
+                <button class="w-full bg-mainColor text-white font-semibold p-2 rounded-lg mb-5 text-lg hover:bg-blue-300 hover:text-black">Acessar</button>
+
+                <span class="text-center font-semibold">Não possui uma conta? <a class="text-blue-500 hover:underline hover:text-blue-300" href="#">Criar uma conta</a></span>
+
+            </form>
+        </section>
+
+        <section class="hidden md:flex flex-col bg-mainColor justify-center items-center h-screen p-3">
+
+            <h2 class="mb-7 text-white md:text-3xl text-center">Domine as <span class="font-bold">tecnologias mais <wbr>buscadas</span> pelo mercado!</h2>
+
+            <img class="w-72 lg:w-80" src="../img/techs.png" alt="arte tecnologica">
+        </section>
+    </div>
 </body>
 </html>
